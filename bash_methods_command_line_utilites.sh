@@ -9,7 +9,9 @@ function create_a_directory_symbolink_link(){
 function search_in_all_aliases_and_methods(){
 	 ag $1 ~/.zsh* --ignore *history -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT"
 	 #~/.bash_utilities/*
-	 ag $1 ~/.bash* -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT"
+	 ag $1 ~/.bash*  -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT"
+	 ag $1 "$BASH_UTILITIES_FOLDER/bash_methods_xapo.sh" -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT"
+	 ag $1 "$BASH_UTILITIES_FOLDER/bash_aliases_clients.sh" -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT"
 
 }
 
