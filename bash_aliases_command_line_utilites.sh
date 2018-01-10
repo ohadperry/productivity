@@ -50,6 +50,8 @@ alias aliases="atom $BASH_UTILITIES_FOLDER"
 alias aa="aliases"
 alias open_the_bash_utilities_folder_in_atom="aliases"
 alias run_blockchain_pretty_addresses_script="bl; cd src; ./14_pretty_name_addresses.sh"
+alias ai_experiment="dh; cd model-zoo/tensorflow/learning_to_remember_rare_events"
+alias ai="ai_experiment"
 
 # Cyber Restart
 alias print_out_intro2_docker_images="docker images --filter  label=org.inginious.grading.name=intro2"
