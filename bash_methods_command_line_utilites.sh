@@ -22,3 +22,9 @@ function build_a_new_intro_2_docker_images_and_delete_the_old_one(){
     dh; docker build INGInious-Docker
 
 }
+
+function add_pycharm_run_config_files_and_commit(){
+
+	git add .idea/runConfigurations/*
+	gc "adding pycharm config files"
+}
