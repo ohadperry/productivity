@@ -28,3 +28,8 @@ function add_pycharm_run_config_files_and_commit(){
 	git add .idea/runConfigurations/*
 	gc "adding pycharm config files"
 }
+
+function show_last_commands_used(){
+	NUMBER=${1-20}
+	history | tail -"$NUMBER"
+}

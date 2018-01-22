@@ -26,3 +26,4 @@ alias fix_last_commit_message="git commit --amend"
 alias edit_last_commit_message="fix_last_commit_message"
 alias gpr="git pull -r origin"
 alias gps="gpr staging "
+alias remove_from_git="git rm --cached " # add the filenames here
