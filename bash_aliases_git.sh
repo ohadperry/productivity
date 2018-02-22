@@ -2,6 +2,7 @@
 
 alias gdm="git diff master --color"
 alias gdd="git diff dev --color"
+alias gds="git diff staging --color"
 alias gdp="git diff production --color"
 alias gc="git commit -am "
 alias gdf="echo 'diffing files from dev'; git diff dev --name-only"
