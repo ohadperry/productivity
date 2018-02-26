@@ -53,6 +53,7 @@ alias run_blockchain_pretty_addresses_script="bl; cd src; ./14_pretty_name_addre
 alias ai_experiment="dh; cd model-zoo/tensorflow/learning_to_remember_rare_events"
 alias ai="ai_experiment"
 alias k="kill -9 "
+alias sed="serverless deploy"
 
 
 # Cyber Restart
