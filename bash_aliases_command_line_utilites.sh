@@ -31,6 +31,7 @@ alias methods_command_line="atom ~/.bash_methods_command_line_utilites"
 alias mc="methods_command_line"
 alias hosts="sudo vim /etc/hosts"
 alias show_directory_size="du -hs "
+alias show_files_and_sub_directories_size="du -sh */; du -sh *"
 alias size_of_localhost_etherum_blockchain_data="show_directory_size /Users/ohadperry/Library/Ethereum/geth/chaindata"
 alias list_all_virtual_envs="lsvirtualenv"
 alias start_cassandra_db="brew services start cassandra"
@@ -53,7 +54,7 @@ alias run_blockchain_pretty_addresses_script="bl; cd src; ./14_pretty_name_addre
 alias ai_experiment="dh; cd model-zoo/tensorflow/learning_to_remember_rare_events"
 alias ai="ai_experiment"
 alias k="kill -9 "
-alias sed="serverless deploy"
+# alias sed="serverless deploy --profile ohad-personal"
 
 
 # Cyber Restart
