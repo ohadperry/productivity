@@ -33,3 +33,8 @@ function show_last_commands_used(){
 	NUMBER=${1-20}
 	history | tail -"$NUMBER"
 }
+
+
+function jcurl() {
+    curl "$1" | jq
+}
