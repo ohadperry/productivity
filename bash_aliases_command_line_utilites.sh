@@ -55,7 +55,7 @@ alias run_blockchain_pretty_addresses_script="bl; cd src; ./14_pretty_name_addre
 alias ai_experiment="dh; cd model-zoo/tensorflow/learning_to_remember_rare_events"
 alias ai="ai_experiment"
 # alias sed="serverless deploy --profile ohad-personal"
-
+alias clear_local_dns_records="sudo dscacheutil -flushcache"
 
 # Cyber Restart
 alias print_out_intro2_docker_images="docker images --filter  label=org.inginious.grading.name=intro2"
