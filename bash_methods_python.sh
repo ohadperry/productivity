@@ -18,6 +18,11 @@ function create_a_new_virutal_env_with_python2_7(){
       create_a_new_virutal_env $1 $PYTHON_PATH
 }
 
+function create_a_new_virutal_env_with_python2_7_9(){
+      PYTHON_PATH=$(python_path 2.7.9)
+      create_a_new_virutal_env $1 $PYTHON_PATH
+}
+
 function create_a_new_virutal_env_with_python3_5_3(){
       PYTHON_PATH=$(python_path 3.5.3)
       create_a_new_virutal_env $1 $PYTHON_PATH
