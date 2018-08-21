@@ -62,3 +62,6 @@ alias print_out_intro2_docker_images="docker images --filter  label=org.inginiou
 alias remove_docker_id="Docker rmi --force "
 # this is tricky. if one exists, we'll have to remove the old one with "Docker rmi —force 123"
 alias build_a_new_intro_2_docker_images="dh; docker build INGInious-Docker"
+
+
+alias ll="ls -ltra"

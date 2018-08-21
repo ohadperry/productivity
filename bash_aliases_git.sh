@@ -29,3 +29,5 @@ alias gpr="git pull -r origin"
 alias gps="gpr staging "
 alias gpp="gpr production "
 alias remove_from_git="git rm --cached " # add the filenames here
+# from here https://stackoverflow.com/a/4822516/1574104
+alias count_number_of_lines_in_non_ignored_files_in_a_repo="git ls-files | xargs wc -l"
