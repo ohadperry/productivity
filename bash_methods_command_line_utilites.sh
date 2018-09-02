@@ -38,3 +38,11 @@ function show_last_commands_used(){
 function jcurl() {
     curl "$1" | jq
 }
+
+
+# graphing python code
+function graph_python_code(){
+		echo '1. make sure graphviz (https://www.graphviz.org/download/) is installed'
+		echo '`2. make sure pydeps (`pip install pydeps`) is installed'
+		pydeps $1
+}

@@ -62,6 +62,10 @@ alias print_out_intro2_docker_images="docker images --filter  label=org.inginiou
 alias remove_docker_id="Docker rmi --force "
 # this is tricky. if one exists, we'll have to remove the old one with "Docker rmi —force 123"
 alias build_a_new_intro_2_docker_images="dh; docker build INGInious-Docker"
+alias start_mongo_service="brew services start mongodb"
+alias start_neo4j_service="brew services start neo4j"
+alias tail_mongo_log="tail -f /usr/local/var/log/mongodb/mongo.log"
+alias tail_neo4j_log="tail -f /usr/local/Cellar/neo4j/3.4.5/libexec/logs/neo4j.log"
 
-
+alias curl="echo 'consider using http tool instead'; curl "
 alias ll="ls -ltra"
