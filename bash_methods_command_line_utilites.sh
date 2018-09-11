@@ -46,3 +46,12 @@ function graph_python_code(){
 		echo '`2. make sure pydeps (`pip install pydeps`) is installed'
 		pydeps $1
 }
+
+
+function uninstall_pip_and_its_dependencies_tree(){
+
+	PIP_NAME=$1
+	echo 'installing `pip-autoremove` and running it';
+	pip install pip-autoremove;
+	pip-autoremove $PIP_NAME;
+}

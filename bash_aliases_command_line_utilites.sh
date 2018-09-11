@@ -1,11 +1,18 @@
+#!/usr/bin/env bash
 alias disk="df -h |grep /dev/disk |grep G"
 
 # open a file or folder in pycharm professional from the command line
 alias ali="atom ~/.bash_aliases"
 alias reload="source $CONFIG_RC_FILE"
 alias py="/usr/local/bin/pycharm_2017_pro "
+
+# python commands
 alias p="python3"
 alias p2="python"
+alias show_pip_dependencies_tree="echo 'installing pipdeptree and running it'; pip install pipdeptree; pipdeptree;"
+
+
+
 alias zz="atom $CONFIG_RC_FILE"
 alias simple_web_server="python2 -m SimpleHTTPServer"
 alias ga="vim ~/.bash_aliases_git"
@@ -66,6 +73,6 @@ alias start_mongo_service="brew services start mongodb"
 alias start_neo4j_service="brew services start neo4j"
 alias tail_mongo_log="tail -f /usr/local/var/log/mongodb/mongo.log"
 alias tail_neo4j_log="tail -f /usr/local/Cellar/neo4j/3.4.5/libexec/logs/neo4j.log"
-
 alias curl="echo 'consider using http tool instead'; curl "
 alias ll="ls -ltra"
+alias k="kill -9 "
