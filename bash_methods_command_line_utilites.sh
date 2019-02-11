@@ -55,3 +55,22 @@ function uninstall_pip_and_its_dependencies_tree(){
 	pip install pip-autoremove;
 	pip-autoremove $PIP_NAME;
 }
+
+
+function validate_ssl_certificate(){
+  CERT_PATH=$1
+	openssl x509 -noout -text -in $CERT_PATH
+}
+
+function validate_ssl_key(){
+	KEY_PATH=$1
+	openssl rsa -noout -text -in $KEY_PATH
+}
+
+
+
+function bas64_file(){
+	IN_FILE=$1
+	OUT_FILE=$2
+	openssl base64 -in $IN_FILE -out $OUT_FILE
+}
