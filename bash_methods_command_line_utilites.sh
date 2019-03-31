@@ -74,3 +74,12 @@ function bas64_file(){
 	OUT_FILE=$2
 	openssl base64 -in $IN_FILE -out $OUT_FILE
 }
+
+b58decode ()
+{
+    python3 -c "import base58; print(base58.b58decode('$1'))"
+}
+b58encode ()
+{
+    python3 -c "import base58; print(base58.b58encode('$1'))"
+}

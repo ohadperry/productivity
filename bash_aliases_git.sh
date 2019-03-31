@@ -26,7 +26,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias fix_last_commit_message="git commit --amend"
 alias edit_last_commit_message="fix_last_commit_message"
 alias gpr="git pull -r origin"
-alias gps="gpr staging "
+alias gps="gpr before_staging "
 alias gpp="gpr production "
 alias remove_from_git="git rm --cached " # add the filenames here
 # from here https://stackoverflow.com/a/4822516/1574104
