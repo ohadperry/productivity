@@ -8,6 +8,11 @@ function what_is_running_on(){
    lsof -i udp:"$1";
 }
 
+function what_is_running_on_localhost(){
+   lsof -i |grep localhost;
+}
+
+
 function kill_all_on(){
   lsof -i ${2}:${1} | awk 'NR!=1 {print $2}' | xargs kill  -9
 
