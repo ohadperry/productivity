@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+CURRENT_MONGODB_VERSION=3.4
+
 alias disk="df -h |grep /dev/disk |grep G"
 
 # open a file or folder in pycharm professional from the command line
@@ -70,8 +72,8 @@ alias print_out_intro2_docker_images="docker images --filter  label=org.inginiou
 alias remove_docker_id="Docker rmi --force "
 # this is tricky. if one exists, we'll have to remove the old one with "Docker rmi —force 123"
 alias build_a_new_intro_2_docker_images="dh; docker build INGInious-Docker"
-alias start_mongo_service="brew services start mongodb@3.2"
-alias restart_mongo_service="brew services restart mongodb@3.2"
+alias start_mongo_service="brew services start mongodb@$CURRENT_MONGODB_VERSION"
+alias restart_mongo_service="brew services restart mongodb@$CURRENT_MONGODB_VERSION"
 alias start_neo4j_service="brew services start neo4j"
 alias tail_mongo_log="tail -f /usr/local/var/log/mongodb/mongo.log"
 alias tail_neo4j_log="tail -f /usr/local/Cellar/neo4j/3.4.5/libexec/logs/neo4j.log"

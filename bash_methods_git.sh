@@ -12,3 +12,13 @@ function squash_the_last_commits_together_to_one(){
     echo "squash_the_last $LAST_COMMITS commits together_to_one"
     git rebase -i HEAD~"$LAST_COMMITS"
 }
+
+
+function compare_branches_commits(){
+    FROM_BRANCH=${1:-"dev"}
+    TO_BRANCH=${2:-"master"}
+    echo "comparting $FROM_BRANCH to $TO_BRANCH"
+
+    gl $FROM_BRANCH..$TO_BRANCH
+
+}
