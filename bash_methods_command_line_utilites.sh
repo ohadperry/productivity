@@ -83,3 +83,26 @@ b58encode ()
 {
     python3 -c "import base58; print(base58.b58encode('$1'))"
 }
+
+
+function convert_jupiter_notwbook_to_html(){
+		PATH_TO_NOTEBOOK=$1
+		dh
+		cd nbconvert
+		echo "converting $PATH_TO_NOTEBOOK to html"
+	  jupyter nbconvert --to html $PATH_TO_NOTEBOOK
+}
+
+
+function open_anaconda_jupyter_locally(){
+
+		echo 'open spotlight search and look for anaconda. Then open the jupiter lab'
+}
+
+
+function print_pips_dependencies_list(){
+
+		echo 'go to https://github.com/jazzband/pip-tools'
+		echo 'on a project, install using `pip install pip-tools`'
+		echo 'pip-compile --output-file requirements_tree.txt <path_to_requirments.txt to investigate>'
+}

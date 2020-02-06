@@ -1,5 +1,5 @@
 
-function show_diff {
+function show_diff_commits {
     DEFAULT_MAIN_BRANCH=master
     MAIN_BRANCH=${2:-$DEFAULT_MAIN_BRANCH}
     echo "comparing between $1 and $2"
