@@ -9,7 +9,7 @@ function create_a_directory_symbolink_link(){
 function search_in_all_aliases_and_methods(){
 	 ag $1 ~/.zsh* --ignore *history -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT"
 	 #~/.bash_utilities/*
-	 ag $1 ~/.bash*  -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT" --skip-vcs-ignores
+	 ag $1 $DEV_HOME/productivity/bash*  -C "$DEFAULT_LINES_BEFORE_AND_AFTER_PRINT" --skip-vcs-ignores
 	 # skip-vcs-ignores - Ignore VCS ignore files (.gitignore, .hgignore), but still use .ignore.
 
 }
@@ -105,4 +105,21 @@ function print_pips_dependencies_list(){
 		echo 'go to https://github.com/jazzband/pip-tools'
 		echo 'on a project, install using `pip install pip-tools`'
 		echo 'pip-compile --output-file requirements_tree.txt <path_to_requirments.txt to investigate>'
+}
+
+function show_public_key(){
+
+	cat ~/.ssh/id_rsa.pub
+
+}
+
+
+function reload(){
+	echo "sourcing aliases and methods from $BASH_UTILITIES_FOLDER (happens in ~/.bash_aliases)"
+	for file in "$BASH_UTILITIES_FOLDER"/bash_*
+	do
+	    if [[ -f $file ]]; then
+	      source $file
+	    fi
+	done
 }

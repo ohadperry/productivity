@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-CURRENT_MONGODB_VERSION=3.2
+export CURRENT_MONGODB_VERSION=3.2
+export CONFIG_RC_FILE=~/.zshrc
 
 alias disk="df -h |grep /dev/disk |grep G"
 
 # open a file or folder in pycharm professional from the command line
 alias ali="atom ~/.bash_aliases"
-alias reload="source $CONFIG_RC_FILE"
 alias py="/usr/local/bin/pycharm_2017_pro "
 
 # python commands
