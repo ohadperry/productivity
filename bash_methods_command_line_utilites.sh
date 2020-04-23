@@ -122,4 +122,7 @@ function reload(){
 	      source $file
 	    fi
 	done
+
+	echo 'sourcing zshrc file '
+	source ~/.zshrc
 }

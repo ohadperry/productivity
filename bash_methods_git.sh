@@ -22,3 +22,9 @@ function compare_branches_commits(){
     gl $FROM_BRANCH..$TO_BRANCH
 
 }
+
+
+function remove_file_from_git(){
+    echo "removing $1 from git but keeping file"
+    git rm --cached $1
+}
