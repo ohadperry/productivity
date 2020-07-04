@@ -1,0 +1,30 @@
+
+
+authentication
+mocks
+
+define steps
+  - כתובת ומספר דירה
+  - sometimes payment plan id and starting month
+  - sometimes is renew plan (create a new one) after 12 months
+
+- apis to use
+  for suggestion:
+    - GetPaymentsByApartment
+    - GetPaymentsByMonth
+    - GetFailedPaymentsByMonth
+
+
+authentication
+
+
+node.js concepts todo
+ - async
+ - await
+
+
+
+Sella is extremely creative and has the entrepreneurship bug in his system.
+He is one of the most interesting people you'll will get to meet.
+I enjoyed working along side him at fiverr and even gained some technical knowledge from him.
+I enjoyed working with him at nowcast to see the amazing work he is doing there.

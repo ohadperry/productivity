@@ -28,3 +28,11 @@ function remove_file_from_git(){
     echo "removing $1 from git but keeping file"
     git rm --cached $1
 }
+
+
+
+function connect_remote_heroku(){
+    # https://devcenter.heroku.com/articles/git#for-an-existing-heroku-app
+    REMOTE_APP_NAME=$1
+    heroku git:remote -a $REMOTE_APP_NAME
+}

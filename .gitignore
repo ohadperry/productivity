@@ -2,6 +2,7 @@
 bash_methods_xapo.sh
 bash_aliases_clients.sh
 bash_aliases_personal.sh
+bash_methods_ptop.sh
 
 venv/*
 .idea/*

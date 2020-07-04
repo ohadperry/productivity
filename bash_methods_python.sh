@@ -38,6 +38,11 @@ function create_a_new_virutal_env_with_python3_7_3(){
       create_a_new_virutal_env $1 $PYTHON_PATH
 }
 
+function create_a_new_virutal_env_with_python3_8_1(){
+      PYTHON_PATH=$(python_path 3.8.1)
+      create_a_new_virutal_env $1 $PYTHON_PATH
+}
+
 
 function create_a_new_virutal_env_with_python(){
       PYTHON_PATH=$(python_path $1)
@@ -47,6 +52,10 @@ function create_a_new_virutal_env_with_python(){
 function remove_currently_activated_virtalenv(){
       # https://stackoverflow.com/a/37154360/8555105
       deactivate
+}
+
+function pip_install_for_all_users(){
+      pip install --user $pip_name
 }
 
 
