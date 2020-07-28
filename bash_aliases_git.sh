@@ -34,3 +34,5 @@ alias count_number_of_lines_in_non_ignored_files_in_a_repo="git ls-files | xargs
 alias push_submodule_changes_remotely="submodule_clone; git submodule update --remote"
 alias contributers="git shortlog -sne"
 alias c=contributers
+alias gp="git checkout production"
+alias gpp="gpr production "

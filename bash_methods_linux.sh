@@ -25,3 +25,10 @@ function kill_all_on_tcp(){
 function kill_all_on_udp(){
      kill_all_on $1 "udp"
 }
+
+function count_number_of_code_lines_in_current_directory(){
+   echo "cloc is required. if not installed run 'npm install -g cloc'"
+
+   cloc ./ --exclude-dir=node_modules,.git
+
+}

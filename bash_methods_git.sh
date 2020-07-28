@@ -36,3 +36,9 @@ function connect_remote_heroku(){
     REMOTE_APP_NAME=$1
     heroku git:remote -a $REMOTE_APP_NAME
 }
+
+fuction delete_branch_locally_and_remotely(){
+  # https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+  git branch -D $1
+  git push origin --delete $1
+}
