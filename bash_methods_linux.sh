@@ -1,6 +1,5 @@
 
 
-
 function what_is_running_on(){
    echo "checking what's running on tcp $1"
    lsof -i tcp:"$1";
